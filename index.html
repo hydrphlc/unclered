@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Uncle Red's Books</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<style>
+		scroll-behavior: smooth
+
+		body, html {
+		  height: 100%;
+		  margin: 0;
+		  font: 400 15px/1.8 "Lato", sans-serif;
+		  color: #777;
+		}
+
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+		  position: relative;
+		  opacity: 0.85;
+		  background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+
+		}
+		.bgimg-1 {
+		  background-image: url("images/uncle_red_pictures/B.jpg") !important;
+		  min-height: 100%;
+		}
+
+		.bgimg-2 {
+		  background-image: url("images/uncle_red_pictures/C.jpg") !important;
+		  min-height: 400px;
+		}
+
+		.bgimg-3 {
+		  background-image: url("images/uncle_red_pictures/A.jpg") !important;
+		  min-height: 400px;
+		}
+
+		.caption {
+		  position: absolute;
+		  left: 0;
+		  top: 50%;
+		  width: 100%;
+		  text-align: center;
+		  color: #000;
+		}
+
+		.caption span.border {
+		  background-color: #111;
+		  color: #fff;
+		  padding: 18px;
+		  font-size: 25px;
+		  letter-spacing: 10px;
+		}
+		
+		img {
+  			max-width: 100%;
+		}
+		
+		h1 {
+		  letter-spacing: 2px;
+		  text-transform: uppercase;
+		  font: 60px "Lato", sans-serif;
+		  color: #fff;
+		  font-weight: 900;
+		}
+
+		h3 {
+	
+		  font: 20px "Lato", sans-serif;
+		  color: #fff;
+		}
+
+		/* Turn off parallax scrolling for tablets and phones */
+		@media only screen and (max-device-width: 1024px) {
+		  .bgimg-1, .bgimg-2, .bgimg-3 {
+		    background-attachment: scroll;
+		  }
+		}
+	</style>
+	  
+	  
+  </head>
+
+  <body>
+
+    <header>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">UNCLE RED BOOKS</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Books
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="#bookpage">Bobby Learns to Fish</a>
+				  <a class="dropdown-item" href="#bookpage">Mary Meets Trilla</a>
+				  
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+		
+    </header>
+
+    <main role="main">
+
+       <section class="jumbotron text-center bgimg-2">
+        <div class="container">
+			
+			<div> 
+				<img src="images/uncle_red_pictures/logo.jpg" />
+			</div>
+			
+			<div>
+			  <h1 class="jumbotron-heading"></h1>
+			  <p class="lead text-muted"></p>
+			  <p>
+			  </p>
+			  <br><br>
+			</div>
+        </div>
+       </section>
+		
+	   
+       <section>
+        <div class="container">
+			<div class="text-center">
+			  <h1 style="color:rgba(0,0,0,.9);"><b>Uncle Red's Childrens Books</b></h1>
+			  <p>
+				<a href="https://www.facebook.com/people/Uncle-red-kids-books-llc/61578960060528/" class="btn btn-primary my-2"><b>CHECKOUT OUR FACEBOOK</b></a>
+			  </p>
+			</div>
+        </div>
+       </section>
+		
+	   <section>
+
+		  <div id="bookpage" class="album py-5 bg-light">
+			<div class="container">
+			  <div>
+				  <h1></h1><br>
+			  </div>
+
+			  <div class="row">
+				<div class="col-md-4">
+				  <div class="card mb-4 box-shadow">
+					<img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap"  src="images/uncle_red_pictures/bobby_learns_how_to_fish.jpg" />
+					<div class="card-body">
+					  <p class="card-text">This book takes you on a journey with Bobby and how he learned everthing about fishing from choosing the right bait to casting his line. Get ready to become a fishing pro like Bobby!</p>
+					  <div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+						  <a href="https://www.newmansprings.com/release/?book=bobby-learns-how-to-fish"><button type="button" class="btn btn-sm btn-outline-secondary">Find</button></a>
+				
+						</div>
+						<small class="text-muted"></small>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="card mb-4 box-shadow">
+					<img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap"  src="images/uncle_red_pictures/mary_meets_trilla.jpg" />
+					<div class="card-body">
+					  <p class="card-text">This book takes children on a journey with Mary to find the hopes and dreams that exist around all of us.</p>
+					  <div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+						  <a href="https://www.newmansprings.com/release/?book=mary-meets-trilla"><button type="button" class="btn btn-sm btn-outline-secondary">Find</button></a>
+						
+						</div>
+						<small class="text-muted"></small>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="card mb-4 box-shadow">
+					<img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap"  src="images/uncle_red_pictures/comingsoon_image.jpg" />
+					<div class="card-body">
+					  <p class="card-text">More titles coming soon! In the works of being published!</p>
+					  <div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+						  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>--><br><br>
+
+						
+						</div>
+						<small class="text-muted"></small>
+					  </div>
+					</div>
+				  </div>
+				</div>
+
+			<!--insert or remove here-->
+			  </div>
+			</div>
+		  </div>
+	   </section>
+		
+	   <section class="text-center bgimg-1">
+        <div id="contact" class="container">
+			<div>
+			  <br>
+			  <h1><b><mark>Get ready to become a fishing pro like Bobby!</mark></b></h1>
+			  <br>
+			  <h3>
+				<b><mark>Go on a journey, from choosing the right bait to casting the line. Kids and parents can learn about fishing!</mark></b>
+			  </h3>
+			  <br><br><br><br><br><br>
+			</div>
+        </div>
+       </section>
+
+
+       <section>
+        <div class="container">
+			<div class="text-center">
+				<br><br><br>
+			  <h1 style="color:rgba(0,0,0,.9);"><b>Published and distributed world wide!</b></h1>
+			  <p>
+				 Written in the USA. Newman Springs Publishing - copyright 2024<br><br><br>
+				 Contact: <b>the.uncle.red@gmail.com</b> <br><br><br>
+			  </p>
+			</div>
+        </div>
+       </section>
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+		<br>
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>This website was developed for UNCLE RED - KIDS BOOKS LLC</p>
+        
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
